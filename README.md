@@ -1,9 +1,13 @@
 # fuckit
-a simple script taht will add a nice animation when all you want to say is:
+a simple script that will allow you to express that feeing of
 > F**K THAT S**T!
 
 ## install
-clone repo and run `./install`
+- clone repo
+- run `./install`
+- agree to add the `github fuckit` alias
+- ...
+- *profit*!
 
 ## usage
 - `fuckit`
