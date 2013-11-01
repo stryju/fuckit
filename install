@@ -2,4 +2,11 @@
 
 echo 'installing fuckit...';
 git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install
+echo;
+read -p "Do you want me to add the github fuckit alias? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    git config --global alias.fuckit "!fuckit; git clean -d -x -f; git reset --hard"
+fi
 echo 'done';
