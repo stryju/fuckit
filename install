@@ -1,11 +1,17 @@
 #!/bin/sh
 
-echo 'installing fuckit...';
+echo 'fuckit: installing fuckit...';
 git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install
+
+while true; do
+  echo '-----';
+  echo;
+  read -p "Do you want me to add the github fuckit alias? [yN] " yn
+  case $yn in
+    [Yy]* ) git config --global alias.fuckit "!fuckit; git clean -d -x -f; git reset --hard"; echo 'fuckit: git alias added'; break;;
+    * ) exit;;
+  esac
+done
+
 echo;
-read -p "Do you want me to add the github fuckit alias? " -n 1 -r;
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    git config --global alias.fuckit "!fuckit; git clean -d -x -f; git reset --hard";
-fi
-echo 'done';
+echo 'fuckit: installation done!';
