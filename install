@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo 'installing fuckit...';
+git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install
+echo 'done';
