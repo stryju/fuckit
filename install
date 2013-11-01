@@ -3,12 +3,13 @@
 echo 'fuckit: installation in progress...';
 cp ./bin/fuckit /usr/local/bin;
 chmod +x /usr/local/bin/fuckit;
+echo;
 
 while true; do
-  read -p "Do you want me to add the github fuckit alias? [yN] " yn
+  read -p " Do you want me to add the github fuckit alias? [yN] " yn
   case $yn in
     [Yy]* ) git config --global alias.fuckit "!fuckit; git clean -d -x -f; git reset --hard"; echo 'fuckit: git alias added'; break;;
-    * ) exit;;
+    * ) break;;
   esac
 done
 
