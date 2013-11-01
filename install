@@ -1,7 +1,8 @@
 #!/bin/sh
 
-echo 'fuckit: installing fuckit...';
-git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install;
+echo 'fuckit: installation in progress...';
+cp ./bin/fuckit /usr/local/bin;
+chmod +x /usr/local/bin/fuckit;
 
 while true; do
   read -p "Do you want me to add the github fuckit alias? [yN] " yn
