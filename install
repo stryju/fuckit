@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'fuckit: installing fuckit...';
-git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install
+git clone git@github.com:stryju/fuckit.git fuckit-install && cp fuckit-install/bin/fuckit /usr/local/bin && rm -r fuckit-install;
 
 while true; do
   echo '-----';
