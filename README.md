@@ -1,7 +1,13 @@
 # fuckit
+a simple script taht will add a nice animation when all you want to say is:
+> F**K THAT S**T!
 
 ## install
 clone repo and run `./install`
+
+## usage
+- `fuckit`
+- add it to any alias to give that meaningful expression you are missing!
 
 ## sample usage
 set alias for `fuck`:
