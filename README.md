@@ -22,7 +22,7 @@ set alias for `fuck`:
 - https://twitter.com/robofuture/status/393880944370651136
 
 ## thanks
-Paul Sturm (get a github account, lazy bastard!)
+[Paul Sturm](https://github.com/psturm)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/stryju/fuckit/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
